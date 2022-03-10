@@ -34,6 +34,10 @@
 # build directories
 cmake-build-debug/
 build/
+.idea/
 
-# samples in
+# code samples
 sample*
+
+# github tokens
+token*
