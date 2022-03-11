@@ -13,8 +13,8 @@ add_executable(cylindr_step_zero Step_0/cylindr.cpp)
 add_library(gmsh SHARED IMPORTED)
 set_target_properties(gmsh PROPERTIES
     IMPORTED_LOCATION "/home/evgen/gmshbase/lib/libgmsh.so"
-    INTERFACE_INCLUDE_DIRECTORIES "/home/evgen/gmshbase/include"
-)
+    INTERFACE_INCLUDE_DIRECTORIES "/home/evgen/gmshbase/include")
+
 set(GMSH_LIBRARY gmsh)
 
 # Укажем библиотеки для линковки

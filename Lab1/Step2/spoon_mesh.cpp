@@ -20,7 +20,7 @@ int main(int argc, char **argv)
         return 0;
     }
 
-    double angle = 40;
+    double angle = 70;
 
     bool forceParametrizablePatches = false;
 
@@ -46,7 +46,7 @@ int main(int argc, char **argv)
     gmsh::model::geo::synchronize();
 
     int f = gmsh::model::mesh::field::add("MathEval");
-    gmsh::model::mesh::field::setString(f, "F", "5");
+    gmsh::model::mesh::field::setString(f, "F", "3");
     gmsh::model::mesh::field::setAsBackgroundMesh(f);
     gmsh::model::mesh::generate(3);
 
